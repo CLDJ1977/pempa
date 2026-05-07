@@ -1,0 +1,12 @@
+# Asociación PEMPA — robots.txt
+# https://pempa.com.ar
+
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# Sitemap
+Sitemap: https://pempa.com.ar/sitemap.xml
+
+# Crawl delay (suave para servidores)
+Crawl-delay: 1

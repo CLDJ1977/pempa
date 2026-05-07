@@ -1,0 +1,17 @@
+# Asociación PEMPA — Redirects
+# Compatible con Cloudflare Pages y Netlify (sin .toml)
+
+# Forzar HTTPS y dominio principal (Cloudflare lo maneja automático con SSL/TLS)
+# Nota: en Cloudflare Pages las redirecciones de www → apex se configuran en el panel
+
+# Si alguien va a /home, lo mandamos al inicio
+/home              /                       301
+/inicio            /                       301
+
+# Páginas comunes de error
+/admin             /                       301
+/wp-admin          /                       301
+/wp-login          /                       301
+
+# 404 fallback (debe ir al final)
+/*                 /404.html               404
