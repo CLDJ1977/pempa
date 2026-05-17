@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logros Legales Históricos | Asociación PEMPA</title>
+    <meta name="description" content="PEMPA participó en las primeras condenas efectivas por maltrato animal en Mendoza. Equinos declarados seres sintientes y sujetos de derecho.">
+    <link rel="icon" type="image/jpeg" href="/img/logo.jpg">
+    <link rel="apple-touch-icon" href="/img/logo.jpg">
+    <meta name="theme-color" content="#1a0f08">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #1a0f08;
+            --ink-soft: #4a3f38;
+            --cream: #f5efe2;
+            --cream-dark: #e8dfd0;
+            --amber: #d4a64a;
+            --amber-light: #e8c97a;
+            --amber-dark: #b8872e;
+            --rust: #c44a32;
+            --sand: #d5cbba;
+            --font-display: 'Instrument Serif', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+            --ease: cubic-bezier(0.22, 1, 0.36, 1);
+            --container: 1200px;
+            --radius-lg: 16px;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--cream);
+            color: var(--ink);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        @media (min-width: 768px) {
+            .container { padding: 0 48px; }
+        }
+
+        /* ========== NAV TOP ========== */
+        .nav-top {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(26, 15, 8, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 16px 0;
+        }
+
+        .nav-top__inner {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media (min-width: 768px) {
+            .nav-top__inner { padding: 0 48px; }
+        }
+
+        .nav-top__brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--cream);
+        }
+
+        .nav-top__brand img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .nav-top__brand-name {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .nav-top__back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--amber);
+            text-decoration: none;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: color 0.3s var(--ease);
+        }
+
+        .nav-top__back:hover { color: var(--amber-light); }
+
+        /* ========== HERO ========== */
+        .logros-hero {
+            padding: 140px 0 80px;
+            background: var(--ink);
+            color: var(--cream);
+            text-align: center;
+        }
+
+        .logros-hero__eyebrow {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--amber);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .logros-hero__title {
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            line-height: 1.1;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .logros-hero__title em {
+            font-style: italic;
+            color: var(--amber);
+        }
+
+        .logros-hero__subtitle {
+            font-size: 1.05rem;
+            color: rgba(245, 239, 226, 0.65);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* ========== INTRO ========== */
+        .logros-intro {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+
+        .logros-intro__text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--ink-soft);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* ========== CASO CARD ========== */
+        .casos {
+            padding: 20px 0 80px;
+        }
+
+        .caso {
+            margin-bottom: 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            align-items: start;
+        }
+
+        @media (min-width: 768px) {
+            .caso { grid-template-columns: 1fr 1fr; gap: 48px; }
+            .caso:nth-child(even) .caso__img { order: 2; }
+            .caso:nth-child(even) .caso__content { order: 1; }
+        }
+
+        .caso__img {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+
+        .caso__img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s var(--ease);
+        }
+
+        .caso__img:hover img { transform: scale(1.03); }
+
+        .caso__num {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--amber);
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .caso__name {
+            font-family: var(--font-display);
+            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            line-height: 1.15;
+            margin-bottom: 8px;
+        }
+
+        .caso__name em { font-style: italic; color: var(--amber-dark); }
+
+        .caso__court {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            letter-spacing: 0.05em;
+            color: var(--ink-soft);
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .caso__desc {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--ink-soft);
+            margin-bottom: 20px;
+        }
+
+        .caso__logros-title {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--amber-dark);
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .caso__logros {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .caso__logro {
+            font-size: 0.88rem;
+            line-height: 1.5;
+            color: var(--ink);
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .caso__logro::before {
+            content: '◆';
+            position: absolute;
+            left: 0;
+            color: var(--amber);
+            font-size: 0.6rem;
+            top: 4px;
+        }
+
+        .caso__importancia {
+            margin-top: 20px;
+            padding: 20px 24px;
+            background: rgba(212, 166, 74, 0.08);
+            border-left: 3px solid var(--amber);
+            border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+        }
+
+        .caso__importancia-title {
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--amber-dark);
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .caso__importancia p {
+            font-size: 0.88rem;
+            line-height: 1.6;
+            color: var(--ink-soft);
+        }
+
+        /* Sin imagen */
+        .caso--no-img {
+            grid-template-columns: 1fr;
+            max-width: 700px;
+        }
+
+        /* ========== DIVIDER ========== */
+        .caso-divider {
+            width: 60px;
+            height: 2px;
+            background: var(--amber);
+            margin: 0 auto 80px;
+            opacity: 0.4;
+        }
+
+        /* ========== JERÓNIMO ========== */
+        .jeronimo {
+            padding: 80px 0;
+            background: var(--ink);
+            color: var(--cream);
+        }
+
+        .jeronimo__inner {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .jeronimo__eyebrow {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--amber);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .jeronimo__title {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            line-height: 1.15;
+            margin-bottom: 28px;
+        }
+
+        .jeronimo__title em { font-style: italic; color: var(--amber); }
+
+        .jeronimo__text {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: rgba(245, 239, 226, 0.75);
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        .jeronimo__links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 36px;
+        }
+
+        .jeronimo__link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 60px;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.3s var(--ease);
+        }
+
+        .jeronimo__link--amber {
+            background: var(--amber);
+            color: var(--ink);
+        }
+
+        .jeronimo__link--amber:hover {
+            background: var(--amber-light);
+            transform: translateY(-2px);
+        }
+
+        .jeronimo__link--outline {
+            border: 1px solid rgba(245, 239, 226, 0.25);
+            color: var(--cream);
+        }
+
+        .jeronimo__link--outline:hover {
+            border-color: var(--amber);
+            color: var(--amber);
+            transform: translateY(-2px);
+        }
+
+        /* ========== FOOTER ========== */
+        .logros-footer {
+            padding: 40px 0;
+            background: var(--ink);
+            border-top: 1px solid rgba(245, 239, 226, 0.08);
+            text-align: center;
+        }
+
+        .logros-footer__text {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            color: rgba(245, 239, 226, 0.4);
+        }
+
+        .logros-footer__text a {
+            color: var(--amber);
+            text-decoration: none;
+            transition: color 0.3s var(--ease);
+        }
+
+        .logros-footer__text a:hover { color: var(--amber-light); }
+
+        /* ========== ANIMATIONS ========== */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav-top">
+        <div class="nav-top__inner">
+            <a href="/" class="nav-top__brand">
+                <img src="/img/logo.jpg" alt="PEMPA" width="36" height="36">
+                <span class="nav-top__brand-name">PEMPA</span>
+            </a>
+            <a href="/" class="nav-top__back">← Volver al sitio</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="logros-hero">
+        <div class="container">
+            <span class="logros-hero__eyebrow">Justicia animal</span>
+            <h1 class="logros-hero__title">Logros Legales<br><em>Históricos</em></h1>
+            <p class="logros-hero__subtitle">Precedentes que cambiaron la historia del derecho animal en Mendoza. Primeras condenas efectivas. Equinos reconocidos como seres sintientes y sujetos de derecho.</p>
+        </div>
+    </header>
+
+    <!-- INTRO -->
+    <section class="logros-intro">
+        <div class="container">
+            <p class="logros-intro__text">La Asociación Protectora de Equinos Mendocinos (PEMPA) ha participado activamente en algunos de los precedentes más importantes de derecho animal en la Provincia de Mendoza. A través del trabajo articulado entre nuestra ONG y nuestro representante legal, fiscalías especializadas, fuerzas de seguridad, profesionales veterinarios y operadores judiciales, se consolidó una línea jurisprudencial histórica que comenzó a reconocer a los animales no humanos como seres sintientes y titulares de tutela jurídica efectiva.</p>
+        </div>
+    </section>
+
+    <!-- CASOS -->
+    <section class="casos">
+        <div class="container">
+
+            <!-- CASO 1: Brisa y Frutilla -->
+            <article class="caso fade-up">
+                <div class="caso__img">
+                    <img src="/img/logros/caso_brisa_frutilla.webp" alt="Brisa y Frutilla" loading="lazy">
+                </div>
+                <div class="caso__content">
+                    <span class="caso__num">Caso 01</span>
+                    <h2 class="caso__name">Brisa y <em>Frutilla</em></h2>
+                    <span class="caso__court">Juzgado Penal Colegiado N.° 2 · Dra. Patricia Alonso · 2025</span>
+                    <p class="caso__desc">En marzo de 2025 se dictó una condena histórica por maltrato animal contra el responsable de mantener a dos potrancas en estado extremo de abandono y desnutrición. Brisa y Frutilla habían sido rescatadas por PEMPA en junio de 2024, presentando cuadros severos de emaciación, anemia, fracturas y abandono sanitario.</p>
+                    <span class="caso__logros-title">Logros</span>
+                    <ul class="caso__logros">
+                        <li class="caso__logro">Condena a seis meses de prisión condicional.</li>
+                        <li class="caso__logro">Inhabilitación especial por diez años para tenencia de equinos.</li>
+                        <li class="caso__logro">Decomiso definitivo de ambas potrancas en favor de PEMPA.</li>
+                        <li class="caso__logro">Reconocimiento judicial del rol institucional de PEMPA como organización idónea para la protección y recuperación permanente de equinos víctimas.</li>
+                        <li class="caso__logro">Primeros antecedentes en Mendoza donde comienza a utilizarse expresamente el concepto de "seres sintientes" y "personas no humanas".</li>
+                        <li class="caso__logro">Consolidación práctica de la tutela judicial efectiva de animales rescatados.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <div class="caso-divider"></div>
+
+            <!-- CASO 2: Patroclo y Aragón -->
+            <article class="caso fade-up">
+                <div class="caso__img">
+                    <img src="/img/logros/caso_patroclo_aragon.webp" alt="Patroclo y Aragón" loading="lazy">
+                </div>
+                <div class="caso__content">
+                    <span class="caso__num">Caso 02</span>
+                    <h2 class="caso__name">Patroclo y <em>Aragón</em></h2>
+                    <span class="caso__court">Juzgado Penal Colegiado N.° 2 · Dra. Erica Sánchez · 2025</span>
+                    <p class="caso__desc">En julio de 2025 la Justicia de Mendoza dictó una sentencia histórica e inédita en derecho animal argentino. Los equinos Patroclo y Aragón fueron rescatados tras sufrir extrema crueldad bajo explotación mediante tracción a sangre. Patroclo colapsó mientras arrastraba más de 1.000 kg de ladrillos y Aragón presentaba un severo estado de desnutrición y deterioro físico.</p>
+                    <span class="caso__logros-title">Logros</span>
+                    <ul class="caso__logros">
+                        <li class="caso__logro">Primera condena efectiva por maltrato animal en Mendoza.</li>
+                        <li class="caso__logro">Cuatro meses de prisión efectiva.</li>
+                        <li class="caso__logro">Inhabilitación especial por diez años para tenencia, comercialización, traslado y cuidado de equinos.</li>
+                        <li class="caso__logro">Decomiso definitivo y entrega permanente a PEMPA.</li>
+                        <li class="caso__logro">Declaración expresa de Patroclo y Aragón como "seres sintientes y sujetos de derecho" — los primeros equinos en Mendoza con esta declaración.</li>
+                        <li class="caso__logro">Reconocimiento judicial de los animales como víctimas directas del delito.</li>
+                        <li class="caso__logro">Incorporación de una perspectiva no antropocéntrica del derecho animal.</li>
+                    </ul>
+                    <div class="caso__importancia">
+                        <span class="caso__importancia-title">Importancia jurídica</span>
+                        <p>La sentencia marcó un cambio de paradigma en Mendoza. Por primera vez un tribunal provincial sostuvo expresamente que el bien jurídico protegido por la Ley 14.346 es el animal no humano en sí mismo y no solamente la sensibilidad humana. Los fundamentos desarrollaron referencias a normativa internacional, la Declaración de Cambridge, jurisprudencia nacional y la necesidad de reformas legislativas para abandonar la concepción de los animales como "cosas".</p>
+                    </div>
+                </div>
+            </article>
+
+            <div class="caso-divider"></div>
+
+            <!-- CASO 3: Zaino Cortés -->
+            <article class="caso fade-up">
+                <div class="caso__img">
+                    <img src="/img/logros/caso_zaino_cortes.webp" alt="Zaino Cortés" loading="lazy">
+                </div>
+                <div class="caso__content">
+                    <span class="caso__num">Caso 03</span>
+                    <h2 class="caso__name">Zaino <em>Cortés</em></h2>
+                    <span class="caso__court">Juzgado Penal Colegiado N.° 2 · Dra. Patricia Alonso · 2025</span>
+                    <p class="caso__desc">En septiembre de 2025 se consolidó la línea jurisprudencial iniciada con Patroclo y Aragón. El equino conocido como Zaino Cortés fue reconocido judicialmente como ser sintiente y sujeto de derecho dentro del marco de una suspensión del juicio a prueba.</p>
+                    <span class="caso__logros-title">Logros</span>
+                    <ul class="caso__logros">
+                        <li class="caso__logro">Reconocimiento judicial del equino víctima como "ser sintiente y sujeto de derecho" — el tercero en la provincia.</li>
+                        <li class="caso__logro">Guarda definitiva de Zaino Cortés a favor de PEMPA.</li>
+                        <li class="caso__logro">Consolidación jurisprudencial de la tutela jurídica animal en Mendoza.</li>
+                        <li class="caso__logro">Desarrollo judicial de criterios vinculados al interés superior del animal rescatado.</li>
+                    </ul>
+                    <div class="caso__importancia">
+                        <span class="caso__importancia-title">Importancia jurídica</span>
+                        <p>La resolución profundizó los criterios establecidos en Patroclo y Aragón y reafirmó la necesidad de proteger jurídicamente a los animales no humanos como víctimas autónomas. El tribunal priorizó la protección del equino por sobre cualquier lógica de propiedad o restitución.</p>
+                    </div>
+                </div>
+            </article>
+
+            <div class="caso-divider"></div>
+
+            <!-- CASO 4: Ceniza -->
+            <article class="caso fade-up">
+                <div class="caso__img">
+                    <img src="/img/logros/caso_ceniza.webp" alt="Ceniza" loading="lazy">
+                </div>
+                <div class="caso__content">
+                    <span class="caso__num">Caso 04</span>
+                    <h2 class="caso__name"><em>Ceniza</em></h2>
+                    <span class="caso__court">Tribunal Penal Colegiado N.° 1 · Dr. Diego Lusverti · 2026</span>
+                    <p class="caso__desc">En marzo de 2026 se dictó la segunda condena efectiva por maltrato equino en Mendoza. Ceniza había sido rescatada en condiciones extremas de abandono, desnutrición severa, lesiones múltiples y sin vacunación obligatoria.</p>
+                    <span class="caso__logros-title">Logros</span>
+                    <ul class="caso__logros">
+                        <li class="caso__logro">Condena a prisión efectiva de 3 meses y 19 días.</li>
+                        <li class="caso__logro">Declaración de reincidencia.</li>
+                        <li class="caso__logro">Inhabilitación especial para tenencia, traslado y manejo de equinos.</li>
+                        <li class="caso__logro">Guarda definitiva de Ceniza a favor de PEMPA.</li>
+                        <li class="caso__logro">Aplicación conjunta de normas de maltrato animal y policía sanitaria animal.</li>
+                        <li class="caso__logro">Reconocimiento del impacto del maltrato animal sobre la salud pública.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <div class="caso-divider"></div>
+
+            <!-- CASO 5: Perritos de Las Heras -->
+            <article class="caso fade-up">
+                <div class="caso__img">
+                    <img src="/img/logros/caso_perritos_heras.webp" alt="Yuma, Barbucha, Bigotes, Tornadito, Indio y Carmela" loading="lazy">
+                </div>
+                <div class="caso__content">
+                    <span class="caso__num">Caso 05</span>
+                    <h2 class="caso__name">Yuma, Barbucha, Bigotes,<br>Tornadito, Indio y <em>Carmela</em></h2>
+                    <span class="caso__court">Juzgado Penal Colegiado N.° 2 · Dr. Gabriel Bragañolo · 2026</span>
+                    <p class="caso__desc">En abril de 2026 la Justicia de Mendoza dictó una condena histórica por crueldad animal contra perros víctimas de violencia extrema. Los animales fueron rescatados en una vivienda de Las Heras luego de allanamientos y denuncias vecinales.</p>
+                    <span class="caso__logros-title">Logros</span>
+                    <ul class="caso__logros">
+                        <li class="caso__logro">Primera condena efectiva en Mendoza por crueldad contra perros.</li>
+                        <li class="caso__logro">Reconocimiento judicial de los perros víctimas como seres sintientes.</li>
+                        <li class="caso__logro">Prisión efectiva y declaración de reincidencia.</li>
+                        <li class="caso__logro">Decomiso definitivo y guarda permanente a favor de PEMPA.</li>
+                        <li class="caso__logro">Reconocimiento del bienestar animal como eje central de tutela jurídica.</li>
+                    </ul>
+                    <div class="caso__importancia">
+                        <span class="caso__importancia-title">Importancia jurídica</span>
+                        <p>El tribunal sostuvo expresamente que el bien jurídico protegido por la Ley 14.346 no es la sensibilidad humana, sino los derechos de los animales no humanos. El fallo fue difundido a nivel nacional y considerado uno de los precedentes más relevantes en materia de derecho animal en Argentina.</p>
+                    </div>
+                </div>
+            </article>
+
+            <div class="caso-divider"></div>
+
+            <!-- CASO 6: Faena clandestina -->
+            <article class="caso caso--no-img fade-up">
+                <div class="caso__content">
+                    <span class="caso__num">Caso 06</span>
+                    <h2 class="caso__name">Faena clandestina de equinos<br><em>Valle de Uco</em></h2>
+                    <span class="caso__court">Juzgado Penal Colegiado N.° 1 · Dra. Teresa Di Bari · 2026</span>
+                    <p class="caso__desc">En abril de 2026 la Justicia de Mendoza dictó una sentencia histórica por faena clandestina y transporte ilegal de aproximadamente 900 kg de carne equina. La investigación permitió detectar una estructura de comercialización clandestina vinculada a carne equina sin trazabilidad sanitaria.</p>
+                    <span class="caso__logros-title">Logros</span>
+                    <ul class="caso__logros">
+                        <li class="caso__logro">Condenas de prisión efectiva.</li>
+                        <li class="caso__logro">Revocación de condena condicional previa y unificación de pena en tres años y cuatro meses de prisión efectiva.</li>
+                        <li class="caso__logro">Declaración de reincidencia.</li>
+                        <li class="caso__logro">Inhabilitación especial por cinco años para comercialización, transporte y faena de carne equina.</li>
+                        <li class="caso__logro">Reconocimiento de los animales faenados como seres sintientes.</li>
+                        <li class="caso__logro">Aplicación articulada de normas de policía sanitaria animal y protección animal.</li>
+                    </ul>
+                    <div class="caso__importancia">
+                        <span class="caso__importancia-title">Importancia jurídica</span>
+                        <p>El fallo representó un avance histórico al extender el paradigma de los seres sintientes a víctimas animales faenadas dentro de estructuras clandestinas. La sentencia articuló conceptos de derecho animal, salud pública, trazabilidad alimentaria y policía sanitaria. El caso evidenció el trabajo coordinado entre fiscalías, Policía Rural, bromatología, organismos sanitarios y PEMPA.</p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- JERÓNIMO -->
+    <section class="jeronimo">
+        <div class="container">
+            <div class="jeronimo__inner fade-up">
+                <span class="jeronimo__eyebrow">¿Quién está detrás de estos logros?</span>
+                <h2 class="jeronimo__title">Jerónimo <em>Allende</em></h2>
+                <p class="jeronimo__text">Abogado penalista y activista por los derechos de los animales en Mendoza. Desde hace más de 10 años dedica su trabajo al rescate, cuidado y protección de equinos como cofundador, presidente y representante legal de PEMPA, una labor que marcó profundamente su vocación y compromiso con la defensa de los seres sintientes.</p>
+                <p class="jeronimo__text">Su trayectoria combina el trabajo territorial con la acción jurídica, impulsando herramientas legales innovadoras para proteger a los animales víctimas de maltrato, abandono y violencia. A través de su participación en causas históricas, Jerónimo formó parte de un cambio sin precedentes en la provincia de Mendoza: la representación jurídica de equinos rescatados reconocidos como seres sintientes y sujetos de derecho.</p>
+                <p class="jeronimo__text">Desde PEMPA y mediante su trabajo profesional, Jerónimo continúa impulsando acciones de rescate, concientización y acompañamiento legal, convencido de que el derecho debe evolucionar para proteger a quienes no pueden pedir ayuda por sí mismos.</p>
+                <p class="jeronimo__text" style="text-align: center; font-style: italic; color: var(--amber); margin-top: 12px;">Su labor representa el inicio de un camino transformador en la defensa animal en Argentina, donde la justicia comienza a reconocer a los animales como individuos con dignidad y sensibilidad propia.</p>
+
+                <div class="jeronimo__links">
+                    <a href="https://mendozalegal.com/2026/04/02/el-caso-patroclo-y-aragon-en-el-derecho-animal-argentino/" target="_blank" rel="noopener" class="jeronimo__link jeronimo__link--amber">
+                        📰 Nota en Mendoza Legal →
+                    </a>
+                    <a href="https://www.instagram.com/lavozdelosequinos.mendoza/" target="_blank" rel="noopener" class="jeronimo__link jeronimo__link--outline">
+                        📷 @lavozdelosequinos.mendoza
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="logros-footer">
+        <div class="container">
+            <p class="logros-footer__text">
+                © <span id="year"></span> Asociación PEMPA · Maipú, Mendoza
+            </p>
+            <p class="logros-footer__text" style="margin-top: 8px;">
+                Desarrollado por <a href="https://deltacode.com.ar/" target="_blank" rel="noopener">DeltaCode</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+        'use strict';
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    })();
+    </script>
+
+</body>
+</html>
