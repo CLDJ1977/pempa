@@ -340,6 +340,85 @@ ul {
     opacity: 0.7;
 }
 
+/* ====== LANG SWITCH (ES | EN) ====== */
+.nav__right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: rgba(245, 239, 226, 0.06);
+    border: 1px solid rgba(245, 239, 226, 0.2);
+    border-radius: 100px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s var(--ease);
+}
+
+.nav--scrolled .lang-switch {
+    background: rgba(26, 15, 8, 0.06);
+    border-color: rgba(26, 15, 8, 0.15);
+}
+
+.lang-switch__btn {
+    display: inline-block;
+    padding: 4px 6px;
+    background: transparent;
+    border: none;
+    color: var(--cream);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s var(--ease);
+    opacity: 0.55;
+}
+
+.nav--scrolled .lang-switch__btn {
+    color: var(--ink);
+}
+
+.lang-switch__btn--active {
+    opacity: 1;
+    color: var(--amber);
+    cursor: default;
+}
+
+.nav--scrolled .lang-switch__btn--active {
+    color: var(--amber-dark);
+}
+
+.lang-switch__btn--soon:hover {
+    opacity: 0.9;
+    color: var(--amber);
+}
+
+.lang-switch__divider {
+    color: var(--cream);
+    opacity: 0.3;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+}
+
+.nav--scrolled .lang-switch__divider {
+    color: var(--ink);
+}
+
+@media (max-width: 480px) {
+    .lang-switch {
+        padding: 6px 10px;
+    }
+    .lang-switch__btn {
+        font-size: 0.7rem;
+    }
+}
+
 .nav__menu-btn {
     display: flex;
     align-items: center;
@@ -1716,6 +1795,39 @@ ul {
 .ayuda__btn--alt:hover {
     background: var(--amber);
     color: var(--ink);
+}
+
+/* ====== ESTADO "PRÓXIMAMENTE" ====== */
+.ayuda__btn--soon {
+    background: rgba(245, 239, 226, 0.08);
+    color: var(--cream);
+    border: 1px dashed rgba(245, 239, 226, 0.3);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.ayuda__btn--soon:hover {
+    background: rgba(245, 239, 226, 0.08);
+    color: var(--cream);
+    transform: none;
+}
+
+.ayuda--featured .ayuda__btn--soon {
+    background: rgba(245, 239, 226, 0.1);
+    color: var(--cream);
+    border-color: rgba(245, 239, 226, 0.25);
+}
+
+.modal__opt--soon {
+    opacity: 0.55;
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.modal__opt--soon:hover {
+    transform: none !important;
+    border-color: rgba(0, 0, 0, 0.08) !important;
 }
 
 .ayuda--featured {
