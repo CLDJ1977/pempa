@@ -1857,6 +1857,37 @@ ul {
     color: rgba(245, 239, 226, 0.78);
 }
 
+/* Datos dentro de card oscura (Western Union) */
+.ayuda--featured .ayuda__data-row {
+    border-bottom-color: rgba(245, 239, 226, 0.12);
+}
+
+.ayuda--featured .ayuda__data-label {
+    color: rgba(245, 239, 226, 0.5);
+}
+
+.ayuda--featured .ayuda__data-value {
+    color: var(--cream);
+}
+
+.ayuda--featured .copy-btn {
+    background: rgba(245, 239, 226, 0.08);
+    border-color: rgba(245, 239, 226, 0.2);
+    color: var(--cream);
+}
+
+.ayuda--featured .copy-btn:hover {
+    background: var(--amber);
+    border-color: var(--amber);
+    color: var(--ink);
+}
+
+.ayuda__data-value--mono {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    letter-spacing: 0.02em;
+}
+
 .ayuda__data {
     margin-top: 8px;
     font-size: 0.85rem;
