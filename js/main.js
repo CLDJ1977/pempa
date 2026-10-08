@@ -414,6 +414,45 @@
         });
     };
 
+    // ============== MINI-MODAL PADRINO ==============
+    const initPadrinoModal = () => {
+        const modal = $('#padrinoModal');
+        if (!modal) return;
+
+        const open = () => {
+            modal.hidden = false;
+            document.body.classList.add('no-scroll');
+        };
+
+        const close = () => {
+            modal.hidden = true;
+            document.body.classList.remove('no-scroll');
+        };
+
+        // Todos los botones con data-action="padrino"
+        $$('[data-action="padrino"]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Si viene de otro modal abierto, primero cerrarlo
+                const donateModal = $('#donateModal');
+                if (donateModal && !donateModal.hidden) {
+                    donateModal.hidden = true;
+                }
+                document.body.classList.remove('no-scroll');
+                setTimeout(open, 80);
+            });
+        });
+
+        // Cerrar con data-close o fondo
+        modal.addEventListener('click', (e) => {
+            const closer = e.target.closest('[data-close]');
+            if (closer) close();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.hidden) close();
+        });
+    };
+
     // ============== MODAL COMPARTIR ==============
     const initShareModal = () => {
         const modal = $('#shareModal');
@@ -605,6 +644,7 @@
         initLightbox(galleryItems);
         initDonateModal();
         initContactoModal();
+        initPadrinoModal();
         initShareModal();
         initCopyButtons();
         initScrollAnimations();

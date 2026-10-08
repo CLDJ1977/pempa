@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="es-AR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logros Legales Históricos | Asociación PEMPA</title>
-    <meta name="description" content="PEMPA participó en las primeras condenas efectivas por maltrato animal en Mendoza. Equinos declarados seres sintientes y sujetos de derecho.">
-    <link rel="icon" type="image/jpeg" href="/img/logo.jpg">
-    <link rel="apple-touch-icon" href="/img/logo.jpg">
-    <meta name="theme-color" content="#1a0f08">
-    <link rel="canonical" href="https://pempa.com.ar/logros.html">
+    <title>Historic Legal Victories | PEMPA Association</title>
+    <meta name="description" content="PEMPA participated in the first effective convictions for animal cruelty in Mendoza. Equines declared sentient beings and subjects of law.">
+    <link rel="canonical" href="https://pempa.com.ar/en/logros.html">
     <link rel="alternate" hreflang="es-AR" href="https://pempa.com.ar/logros.html">
     <link rel="alternate" hreflang="en" href="https://pempa.com.ar/en/logros.html">
     <link rel="alternate" hreflang="x-default" href="https://pempa.com.ar/logros.html">
+    <link rel="icon" type="image/jpeg" href="/img/logo.jpg">
+    <link rel="apple-touch-icon" href="/img/logo.jpg">
+    <meta name="theme-color" content="#1a0f08">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -133,18 +133,16 @@
         .lang-switch {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            padding: 6px 11px;
+            gap: 6px;
+            padding: 6px 12px;
             background: rgba(245, 239, 226, 0.06);
             border: 1px solid rgba(245, 239, 226, 0.2);
             border-radius: 100px;
         }
 
         .lang-switch__btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 3px 7px;
+            display: inline-block;
+            padding: 4px 6px;
             background: transparent;
             border: none;
             color: var(--cream);
@@ -156,49 +154,29 @@
             cursor: pointer;
             opacity: 0.55;
             transition: color 0.25s var(--ease), opacity 0.25s var(--ease);
-            border-radius: 50px;
-        }
-
-        .lang-switch__btn:hover {
-            opacity: 0.95;
-            color: var(--amber);
         }
 
         .lang-switch__btn--active {
             opacity: 1;
             color: var(--amber);
             cursor: default;
-            pointer-events: none;
         }
 
-        .lang-switch__flag {
-            width: 17px;
-            height: 13px;
-            border-radius: 2px;
-            overflow: hidden;
-            display: inline-block;
-            box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
-            flex-shrink: 0;
-        }
-
-        .lang-switch__flag svg {
-            display: block;
-            width: 100%;
-            height: 100%;
+        .lang-switch__btn--soon:hover {
+            opacity: 0.9;
+            color: var(--amber);
         }
 
         .lang-switch__divider {
             color: var(--cream);
-            opacity: 0.25;
+            opacity: 0.3;
             font-family: var(--font-mono);
-            font-size: 0.75rem;
+            font-size: 0.72rem;
         }
 
         @media (max-width: 540px) {
-            .nav-top__right { gap: 10px; }
-            .lang-switch { padding: 5px 9px; gap: 6px; }
-            .lang-switch__btn { font-size: 0.66rem; padding: 3px 5px; gap: 5px; }
-            .lang-switch__flag { width: 15px; height: 11px; }
+            .lang-switch { padding: 5px 9px; }
+            .lang-switch__btn { font-size: 0.66rem; }
             .nav-top__back { font-size: 0.72rem; }
         }
 
@@ -521,23 +499,23 @@
     <!-- NAV -->
     <nav class="nav-top">
         <div class="nav-top__inner">
-            <a href="/" class="nav-top__brand">
+            <a href="/en/" class="nav-top__brand">
                 <img src="/img/logo.jpg" alt="PEMPA" width="36" height="36">
                 <span class="nav-top__brand-name">PEMPA</span>
             </a>
             <div class="nav-top__right">
                 <div class="lang-switch" role="group" aria-label="Idioma / Language">
-                    <button class="lang-switch__btn lang-switch__btn--active" type="button" aria-current="page">
+                    <a href="/logros.html" class="lang-switch__btn" hreflang="es-AR" lang="es" title="Versión en español">
                         <span class="lang-switch__flag" aria-hidden="true"><svg viewBox="0 0 9 6" preserveAspectRatio="none"><rect width="9" height="2" fill="#74acdf"/><rect y="2" width="9" height="2" fill="#fff"/><rect y="4" width="9" height="2" fill="#74acdf"/><circle cx="4.5" cy="3" r="0.55" fill="#f6b40e"/></svg></span>
                         <span>ES</span>
-                    </button>
-                    <span class="lang-switch__divider" aria-hidden="true">|</span>
-                    <a href="/en/logros.html" class="lang-switch__btn" hreflang="en" lang="en" title="English version">
-                        <span class="lang-switch__flag" aria-hidden="true"><svg viewBox="0 0 60 30" preserveAspectRatio="none"><clipPath id="ukc-lg"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="ukc-lg2"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><g clip-path="url(#ukc-lg)"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#ukc-lg2)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg></span>
-                        <span>EN</span>
                     </a>
+                    <span class="lang-switch__divider" aria-hidden="true">|</span>
+                    <button class="lang-switch__btn lang-switch__btn--active" type="button" aria-current="page">
+                        <span class="lang-switch__flag" aria-hidden="true"><svg viewBox="0 0 60 30" preserveAspectRatio="none"><clipPath id="ukc-lg-en"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="ukc-lg-en2"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><g clip-path="url(#ukc-lg-en)"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#ukc-lg-en2)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg></span>
+                        <span>EN</span>
+                    </button>
                 </div>
-                <a href="/" class="nav-top__back">← Volver</a>
+                <a href="/en/" class="nav-top__back">← Back</a>
             </div>
         </div>
     </nav>
@@ -545,172 +523,172 @@
     <!-- HERO -->
     <header class="logros-hero">
         <div class="container">
-            <span class="logros-hero__eyebrow">Justicia animal</span>
-            <h1 class="logros-hero__title">Logros Legales<br><em>Históricos</em></h1>
-            <p class="logros-hero__subtitle">Precedentes que cambiaron la historia del derecho animal en Mendoza. Primeras condenas efectivas. Equinos reconocidos como seres sintientes y sujetos de derecho.</p>
+            <span class="logros-hero__eyebrow">Animal justice</span>
+            <h1 class="logros-hero__title">Historic Legal<br><em>Victories</em></h1>
+            <p class="logros-hero__subtitle">Precedents that changed the history of animal law in Mendoza. First effective convictions. Equines recognized as sentient beings and subjects of law.</p>
         </div>
     </header>
 
     <!-- INTRO -->
     <section class="logros-intro">
         <div class="container">
-            <p class="logros-intro__text">La Asociación Protectora de Equinos Mendocinos (PEMPA) ha participado activamente en algunos de los precedentes más importantes de derecho animal en la Provincia de Mendoza. A través del trabajo articulado entre nuestra ONG y nuestro representante legal, fiscalías especializadas, fuerzas de seguridad, profesionales veterinarios y operadores judiciales, se consolidó una línea jurisprudencial histórica que comenzó a reconocer a los animales no humanos como seres sintientes y titulares de tutela jurídica efectiva.</p>
+            <p class="logros-intro__text">The Mendoza Horse Protection Association (PEMPA) has been actively involved in some of the most important animal law precedents in the Province of Mendoza. Through the coordinated work between our NGO and our legal representative, specialized prosecutor's offices, security forces, veterinary professionals and judicial operators, a historic line of case law was consolidated that began to recognize non-human animals as sentient beings and holders of effective legal protection.</p>
         </div>
     </section>
 
-    <!-- CASOS -->
+    <!-- CASES -->
     <section class="casos">
         <div class="container">
 
-            <!-- CASO 1: Brisa y Frutilla -->
+            <!-- CASE 1: Brisa and Frutilla -->
             <article class="caso fade-up">
                 <div class="caso__img">
-                    <img src="/img/logros/caso_brisa_frutilla.webp" alt="Brisa y Frutilla" loading="lazy">
+                    <img src="/img/logros/caso_brisa_frutilla.webp" alt="Brisa and Frutilla" loading="lazy">
                 </div>
                 <div class="caso__content">
-                    <span class="caso__num">Caso 01</span>
-                    <h2 class="caso__name">Brisa y <em>Frutilla</em></h2>
-                    <span class="caso__court">Juzgado Penal Colegiado N.° 2 · Dra. Patricia Alonso · 2025</span>
-                    <p class="caso__desc">En marzo de 2025 se dictó una condena histórica por maltrato animal contra el responsable de mantener a dos potrancas en estado extremo de abandono y desnutrición. Brisa y Frutilla habían sido rescatadas por PEMPA en junio de 2024, presentando cuadros severos de emaciación, anemia, fracturas y abandono sanitario.</p>
-                    <span class="caso__logros-title">Logros</span>
+                    <span class="caso__num">Case 01</span>
+                    <h2 class="caso__name">Brisa and <em>Frutilla</em></h2>
+                    <span class="caso__court">Collegiate Criminal Court No. 2 · Judge Patricia Alonso · 2025</span>
+                    <p class="caso__desc">In March 2025, a historic conviction for animal cruelty was handed down against the person responsible for keeping two young mares in extreme conditions of abandonment and malnutrition. Brisa and Frutilla had been rescued by PEMPA in June 2024, showing severe emaciation, anemia, fractures and complete lack of health care.</p>
+                    <span class="caso__logros-title">Outcomes</span>
                     <ul class="caso__logros">
-                        <li class="caso__logro">Condena a seis meses de prisión condicional.</li>
-                        <li class="caso__logro">Inhabilitación especial por diez años para tenencia de equinos.</li>
-                        <li class="caso__logro">Decomiso definitivo de ambas potrancas en favor de PEMPA.</li>
-                        <li class="caso__logro">Reconocimiento judicial del rol institucional de PEMPA como organización idónea para la protección y recuperación permanente de equinos víctimas.</li>
-                        <li class="caso__logro">Primeros antecedentes en Mendoza donde comienza a utilizarse expresamente el concepto de "seres sintientes" y "personas no humanas".</li>
-                        <li class="caso__logro">Consolidación práctica de la tutela judicial efectiva de animales rescatados.</li>
+                        <li class="caso__logro">Six months of suspended prison sentence.</li>
+                        <li class="caso__logro">Ten-year special ban on owning equines.</li>
+                        <li class="caso__logro">Definitive forfeiture of both mares in favor of PEMPA.</li>
+                        <li class="caso__logro">Judicial recognition of PEMPA's institutional role as a qualified organization for the permanent protection and recovery of victim equines.</li>
+                        <li class="caso__logro">First precedents in Mendoza where the concepts of "sentient beings" and "non-human persons" are expressly used for animal victims.</li>
+                        <li class="caso__logro">Practical consolidation of effective judicial protection for rescued animals.</li>
                     </ul>
                 </div>
             </article>
 
             <div class="caso-divider"></div>
 
-            <!-- CASO 2: Patroclo y Aragón -->
+            <!-- CASE 2: Patroclo and Aragón -->
             <article class="caso fade-up">
                 <div class="caso__img">
-                    <img src="/img/logros/caso_patroclo_aragon.webp" alt="Patroclo y Aragón" loading="lazy">
+                    <img src="/img/logros/caso_patroclo_aragon.webp" alt="Patroclo and Aragón" loading="lazy">
                 </div>
                 <div class="caso__content">
-                    <span class="caso__num">Caso 02</span>
-                    <h2 class="caso__name">Patroclo y <em>Aragón</em></h2>
-                    <span class="caso__court">Juzgado Penal Colegiado N.° 2 · Dra. Erica Sánchez · 2025</span>
-                    <p class="caso__desc">En julio de 2025 la Justicia de Mendoza dictó una sentencia histórica e inédita en derecho animal argentino. Los equinos Patroclo y Aragón fueron rescatados tras sufrir extrema crueldad bajo explotación mediante tracción a sangre. Patroclo colapsó mientras arrastraba más de 1.000 kg de ladrillos y Aragón presentaba un severo estado de desnutrición y deterioro físico.</p>
-                    <span class="caso__logros-title">Logros</span>
+                    <span class="caso__num">Case 02</span>
+                    <h2 class="caso__name">Patroclo and <em>Aragón</em></h2>
+                    <span class="caso__court">Collegiate Criminal Court No. 2 · Judge Erica Sánchez · 2025</span>
+                    <p class="caso__desc">In July 2025, the Mendoza Justice system issued a historic and unprecedented ruling in Argentine animal law. The horses Patroclo and Aragón were rescued after suffering extreme cruelty as victims of forced-labor exploitation. Patroclo collapsed while dragging over 1,000 kg of bricks, and Aragón showed severe malnutrition and physical deterioration.</p>
+                    <span class="caso__logros-title">Outcomes</span>
                     <ul class="caso__logros">
-                        <li class="caso__logro">Primera condena efectiva por maltrato animal en Mendoza.</li>
-                        <li class="caso__logro">Cuatro meses de prisión efectiva.</li>
-                        <li class="caso__logro">Inhabilitación especial por diez años para tenencia, comercialización, traslado y cuidado de equinos.</li>
-                        <li class="caso__logro">Decomiso definitivo y entrega permanente a PEMPA.</li>
-                        <li class="caso__logro">Declaración expresa de Patroclo y Aragón como "seres sintientes y sujetos de derecho" — los primeros equinos en Mendoza con esta declaración.</li>
-                        <li class="caso__logro">Reconocimiento judicial de los animales como víctimas directas del delito.</li>
-                        <li class="caso__logro">Incorporación de una perspectiva no antropocéntrica del derecho animal.</li>
+                        <li class="caso__logro">First effective conviction for animal cruelty in Mendoza.</li>
+                        <li class="caso__logro">Four months of actual prison time.</li>
+                        <li class="caso__logro">Ten-year special ban on owning, trading, transporting or handling equines.</li>
+                        <li class="caso__logro">Definitive forfeiture and permanent transfer to PEMPA.</li>
+                        <li class="caso__logro">Express declaration of Patroclo and Aragón as "sentient beings and subjects of law" — the first equines in Mendoza with this legal status.</li>
+                        <li class="caso__logro">Judicial recognition of the animals as direct victims of the crime.</li>
+                        <li class="caso__logro">Incorporation of a non-anthropocentric perspective into animal law.</li>
                     </ul>
                     <div class="caso__importancia">
-                        <span class="caso__importancia-title">Importancia jurídica</span>
-                        <p>La sentencia marcó un cambio de paradigma en Mendoza. Por primera vez un tribunal provincial sostuvo expresamente que el bien jurídico protegido por la Ley 14.346 es el animal no humano en sí mismo y no solamente la sensibilidad humana. Los fundamentos desarrollaron referencias a normativa internacional, la Declaración de Cambridge, jurisprudencia nacional y la necesidad de reformas legislativas para abandonar la concepción de los animales como "cosas".</p>
+                        <span class="caso__importancia-title">Legal significance</span>
+                        <p>The ruling marked a paradigm shift in Mendoza. For the first time, a provincial court expressly held that the legal interest protected by Law 14.346 is the non-human animal itself, not merely human sensitivity. The reasoning drew on international regulations, the Cambridge Declaration, national case law, and the need for legislative reform to move beyond the notion of animals as "things".</p>
                     </div>
                 </div>
             </article>
 
             <div class="caso-divider"></div>
 
-            <!-- CASO 3: Zaino Cortés -->
+            <!-- CASE 3: Zaino Cortés -->
             <article class="caso fade-up">
                 <div class="caso__img">
                     <img src="/img/logros/caso_zaino_cortes.webp" alt="Zaino Cortés" loading="lazy">
                 </div>
                 <div class="caso__content">
-                    <span class="caso__num">Caso 03</span>
+                    <span class="caso__num">Case 03</span>
                     <h2 class="caso__name">Zaino <em>Cortés</em></h2>
-                    <span class="caso__court">Juzgado Penal Colegiado N.° 2 · Dra. Patricia Alonso · 2025</span>
-                    <p class="caso__desc">En septiembre de 2025 se consolidó la línea jurisprudencial iniciada con Patroclo y Aragón. El equino conocido como Zaino Cortés fue reconocido judicialmente como ser sintiente y sujeto de derecho dentro del marco de una suspensión del juicio a prueba.</p>
-                    <span class="caso__logros-title">Logros</span>
+                    <span class="caso__court">Collegiate Criminal Court No. 2 · Judge Patricia Alonso · 2025</span>
+                    <p class="caso__desc">In September 2025, the line of case law started with Patroclo and Aragón was consolidated. The horse known as Zaino Cortés was judicially recognized as a sentient being and subject of law within the framework of a suspended judgment.</p>
+                    <span class="caso__logros-title">Outcomes</span>
                     <ul class="caso__logros">
-                        <li class="caso__logro">Reconocimiento judicial del equino víctima como "ser sintiente y sujeto de derecho" — el tercero en la provincia.</li>
-                        <li class="caso__logro">Guarda definitiva de Zaino Cortés a favor de PEMPA.</li>
-                        <li class="caso__logro">Consolidación jurisprudencial de la tutela jurídica animal en Mendoza.</li>
-                        <li class="caso__logro">Desarrollo judicial de criterios vinculados al interés superior del animal rescatado.</li>
+                        <li class="caso__logro">Judicial recognition of the equine victim as a "sentient being and subject of law" — the third such recognition in the province.</li>
+                        <li class="caso__logro">Definitive custody of Zaino Cortés granted to PEMPA.</li>
+                        <li class="caso__logro">Jurisprudential consolidation of animal legal protection in Mendoza.</li>
+                        <li class="caso__logro">Judicial development of criteria related to the best interests of the rescued animal.</li>
                     </ul>
                     <div class="caso__importancia">
-                        <span class="caso__importancia-title">Importancia jurídica</span>
-                        <p>La resolución profundizó los criterios establecidos en Patroclo y Aragón y reafirmó la necesidad de proteger jurídicamente a los animales no humanos como víctimas autónomas. El tribunal priorizó la protección del equino por sobre cualquier lógica de propiedad o restitución.</p>
+                        <span class="caso__importancia-title">Legal significance</span>
+                        <p>The ruling deepened the criteria established in Patroclo and Aragón, and reaffirmed the need to legally protect non-human animals as autonomous victims. The court prioritized the protection of the horse over any logic of ownership or restitution.</p>
                     </div>
                 </div>
             </article>
 
             <div class="caso-divider"></div>
 
-            <!-- CASO 4: Ceniza -->
+            <!-- CASE 4: Ceniza -->
             <article class="caso fade-up">
                 <div class="caso__img">
                     <img src="/img/logros/caso_ceniza.webp" alt="Ceniza" loading="lazy">
                 </div>
                 <div class="caso__content">
-                    <span class="caso__num">Caso 04</span>
+                    <span class="caso__num">Case 04</span>
                     <h2 class="caso__name"><em>Ceniza</em></h2>
-                    <span class="caso__court">Tribunal Penal Colegiado N.° 1 · Dr. Diego Lusverti · 2026</span>
-                    <p class="caso__desc">En marzo de 2026 se dictó la segunda condena efectiva por maltrato equino en Mendoza. Ceniza había sido rescatada en condiciones extremas de abandono, desnutrición severa, lesiones múltiples y sin vacunación obligatoria.</p>
-                    <span class="caso__logros-title">Logros</span>
+                    <span class="caso__court">Collegiate Criminal Court No. 1 · Judge Diego Lusverti · 2026</span>
+                    <p class="caso__desc">In March 2026, the second effective conviction for equine cruelty in Mendoza was handed down. Ceniza had been rescued in extreme conditions of abandonment, severe malnutrition, multiple injuries, and without mandatory vaccinations.</p>
+                    <span class="caso__logros-title">Outcomes</span>
                     <ul class="caso__logros">
-                        <li class="caso__logro">Condena a prisión efectiva de 3 meses y 19 días.</li>
-                        <li class="caso__logro">Declaración de reincidencia.</li>
-                        <li class="caso__logro">Inhabilitación especial para tenencia, traslado y manejo de equinos.</li>
-                        <li class="caso__logro">Guarda definitiva de Ceniza a favor de PEMPA.</li>
-                        <li class="caso__logro">Aplicación conjunta de normas de maltrato animal y policía sanitaria animal.</li>
-                        <li class="caso__logro">Reconocimiento del impacto del maltrato animal sobre la salud pública.</li>
+                        <li class="caso__logro">Effective prison sentence of 3 months and 19 days.</li>
+                        <li class="caso__logro">Declaration of recidivism.</li>
+                        <li class="caso__logro">Special ban on the ownership, transport and handling of equines.</li>
+                        <li class="caso__logro">Definitive custody of Ceniza granted to PEMPA.</li>
+                        <li class="caso__logro">Joint application of animal cruelty laws and animal health regulations.</li>
+                        <li class="caso__logro">Recognition of the impact of animal cruelty on public health.</li>
                     </ul>
                 </div>
             </article>
 
             <div class="caso-divider"></div>
 
-            <!-- CASO 5: Perritos de Las Heras -->
+            <!-- CASE 5: Las Heras Dogs -->
             <article class="caso fade-up">
                 <div class="caso__img">
-                    <img src="/img/logros/caso_perritos_heras.webp" alt="Yuma, Barbucha, Bigotes, Tornadito, Indio y Carmela" loading="lazy">
+                    <img src="/img/logros/caso_perritos_heras.webp" alt="Yuma, Barbucha, Bigotes, Tornadito, Indio and Carmela" loading="lazy">
                 </div>
                 <div class="caso__content">
-                    <span class="caso__num">Caso 05</span>
-                    <h2 class="caso__name">Yuma, Barbucha, Bigotes,<br>Tornadito, Indio y <em>Carmela</em></h2>
-                    <span class="caso__court">Juzgado Penal Colegiado N.° 2 · Dr. Gabriel Bragañolo · 2026</span>
-                    <p class="caso__desc">En abril de 2026 la Justicia de Mendoza dictó una condena histórica por crueldad animal contra perros víctimas de violencia extrema. Los animales fueron rescatados en una vivienda de Las Heras luego de allanamientos y denuncias vecinales.</p>
-                    <span class="caso__logros-title">Logros</span>
+                    <span class="caso__num">Case 05</span>
+                    <h2 class="caso__name">Yuma, Barbucha, Bigotes,<br>Tornadito, Indio and <em>Carmela</em></h2>
+                    <span class="caso__court">Collegiate Criminal Court No. 2 · Judge Gabriel Bragañolo · 2026</span>
+                    <p class="caso__desc">In April 2026, the Mendoza Justice system handed down a historic conviction for animal cruelty against dogs who were victims of extreme violence. The animals were rescued from a home in Las Heras following raids and neighbor complaints.</p>
+                    <span class="caso__logros-title">Outcomes</span>
                     <ul class="caso__logros">
-                        <li class="caso__logro">Primera condena efectiva en Mendoza por crueldad contra perros.</li>
-                        <li class="caso__logro">Reconocimiento judicial de los perros víctimas como seres sintientes.</li>
-                        <li class="caso__logro">Prisión efectiva y declaración de reincidencia.</li>
-                        <li class="caso__logro">Decomiso definitivo y guarda permanente a favor de PEMPA.</li>
-                        <li class="caso__logro">Reconocimiento del bienestar animal como eje central de tutela jurídica.</li>
+                        <li class="caso__logro">First effective conviction in Mendoza for cruelty against dogs.</li>
+                        <li class="caso__logro">Judicial recognition of the dog victims as sentient beings.</li>
+                        <li class="caso__logro">Effective prison sentence and declaration of recidivism.</li>
+                        <li class="caso__logro">Definitive forfeiture and permanent custody granted to PEMPA.</li>
+                        <li class="caso__logro">Recognition of animal welfare as the central pillar of legal protection.</li>
                     </ul>
                     <div class="caso__importancia">
-                        <span class="caso__importancia-title">Importancia jurídica</span>
-                        <p>El tribunal sostuvo expresamente que el bien jurídico protegido por la Ley 14.346 no es la sensibilidad humana, sino los derechos de los animales no humanos. El fallo fue difundido a nivel nacional y considerado uno de los precedentes más relevantes en materia de derecho animal en Argentina.</p>
+                        <span class="caso__importancia-title">Legal significance</span>
+                        <p>The court expressly held that the legal interest protected by Law 14.346 is not human sensitivity, but the rights of non-human animals. The ruling was covered nationwide and is considered one of the most relevant precedents in animal law in Argentina.</p>
                     </div>
                 </div>
             </article>
 
             <div class="caso-divider"></div>
 
-            <!-- CASO 6: Faena clandestina -->
+            <!-- CASE 6: Clandestine slaughter -->
             <article class="caso caso--no-img fade-up">
                 <div class="caso__content">
-                    <span class="caso__num">Caso 06</span>
-                    <h2 class="caso__name">Faena clandestina de equinos<br><em>Valle de Uco</em></h2>
-                    <span class="caso__court">Juzgado Penal Colegiado N.° 1 · Dra. Teresa Di Bari · 2026</span>
-                    <p class="caso__desc">En abril de 2026 la Justicia de Mendoza dictó una sentencia histórica por faena clandestina y transporte ilegal de aproximadamente 900 kg de carne equina. La investigación permitió detectar una estructura de comercialización clandestina vinculada a carne equina sin trazabilidad sanitaria.</p>
-                    <span class="caso__logros-title">Logros</span>
+                    <span class="caso__num">Case 06</span>
+                    <h2 class="caso__name">Clandestine equine slaughter<br><em>Valle de Uco</em></h2>
+                    <span class="caso__court">Collegiate Criminal Court No. 1 · Judge Teresa Di Bari · 2026</span>
+                    <p class="caso__desc">In April 2026, the Mendoza Justice system handed down a historic ruling on clandestine slaughter and illegal transport of approximately 900 kg of horse meat. The investigation uncovered a clandestine commercialization network dealing in horse meat with no health traceability.</p>
+                    <span class="caso__logros-title">Outcomes</span>
                     <ul class="caso__logros">
-                        <li class="caso__logro">Condenas de prisión efectiva.</li>
-                        <li class="caso__logro">Revocación de condena condicional previa y unificación de pena en tres años y cuatro meses de prisión efectiva.</li>
-                        <li class="caso__logro">Declaración de reincidencia.</li>
-                        <li class="caso__logro">Inhabilitación especial por cinco años para comercialización, transporte y faena de carne equina.</li>
-                        <li class="caso__logro">Reconocimiento de los animales faenados como seres sintientes.</li>
-                        <li class="caso__logro">Aplicación articulada de normas de policía sanitaria animal y protección animal.</li>
+                        <li class="caso__logro">Effective prison convictions.</li>
+                        <li class="caso__logro">Revocation of a previous suspended sentence and unification of the penalty into three years and four months of actual prison time.</li>
+                        <li class="caso__logro">Declaration of recidivism.</li>
+                        <li class="caso__logro">Five-year special ban on the trading, transport and slaughter of horse meat.</li>
+                        <li class="caso__logro">Recognition of the slaughtered animals as sentient beings.</li>
+                        <li class="caso__logro">Coordinated application of animal health and animal protection regulations.</li>
                     </ul>
                     <div class="caso__importancia">
-                        <span class="caso__importancia-title">Importancia jurídica</span>
-                        <p>El fallo representó un avance histórico al extender el paradigma de los seres sintientes a víctimas animales faenadas dentro de estructuras clandestinas. La sentencia articuló conceptos de derecho animal, salud pública, trazabilidad alimentaria y policía sanitaria. El caso evidenció el trabajo coordinado entre fiscalías, Policía Rural, bromatología, organismos sanitarios y PEMPA.</p>
+                        <span class="caso__importancia-title">Legal significance</span>
+                        <p>The ruling was a historic step forward by extending the paradigm of sentient beings to animal victims slaughtered within clandestine networks. The judgment tied together animal law, public health, food traceability and health-enforcement concepts. The case demonstrated the coordinated work of prosecutor's offices, the Rural Police, food-safety officials, health agencies and PEMPA.</p>
                     </div>
                 </div>
             </article>
@@ -722,16 +700,16 @@
     <section class="jeronimo">
         <div class="container">
             <div class="jeronimo__inner fade-up">
-                <span class="jeronimo__eyebrow">¿Quién está detrás de estos logros?</span>
+                <span class="jeronimo__eyebrow">Who is behind these victories?</span>
                 <h2 class="jeronimo__title">Jerónimo <em>Allende</em></h2>
-                <p class="jeronimo__text">Abogado penalista y activista por los derechos de los animales en Mendoza. Desde hace más de 10 años dedica su trabajo al rescate, cuidado y protección de equinos como cofundador, presidente y representante legal de PEMPA, una labor que marcó profundamente su vocación y compromiso con la defensa de los seres sintientes.</p>
-                <p class="jeronimo__text">Su trayectoria combina el trabajo territorial con la acción jurídica, impulsando herramientas legales innovadoras para proteger a los animales víctimas de maltrato, abandono y violencia. A través de su participación en causas históricas, Jerónimo formó parte de un cambio sin precedentes en la provincia de Mendoza: la representación jurídica de equinos rescatados reconocidos como seres sintientes y sujetos de derecho.</p>
-                <p class="jeronimo__text">Desde PEMPA y mediante su trabajo profesional, Jerónimo continúa impulsando acciones de rescate, concientización y acompañamiento legal, convencido de que el derecho debe evolucionar para proteger a quienes no pueden pedir ayuda por sí mismos.</p>
-                <p class="jeronimo__text" style="text-align: center; font-style: italic; color: var(--amber); margin-top: 12px;">Su labor representa el inicio de un camino transformador en la defensa animal en Argentina, donde la justicia comienza a reconocer a los animales como individuos con dignidad y sensibilidad propia.</p>
+                <p class="jeronimo__text">Criminal-law attorney and animal-rights activist in Mendoza. For over 10 years, he has dedicated his work to the rescue, care and protection of equines as co-founder, president and legal representative of PEMPA — work that deeply shaped his calling and his commitment to defending sentient beings.</p>
+                <p class="jeronimo__text">His career combines fieldwork with legal action, developing innovative legal tools to protect animals suffering abuse, abandonment and violence. Through his involvement in landmark cases, Jerónimo became part of an unprecedented shift in the province of Mendoza: the legal representation of rescued equines recognized as sentient beings and subjects of law.</p>
+                <p class="jeronimo__text">From PEMPA and through his professional work, Jerónimo continues to lead efforts in rescue, awareness and legal support, convinced that the law must evolve to protect those who cannot ask for help on their own.</p>
+                <p class="jeronimo__text" style="text-align: center; font-style: italic; color: var(--amber); margin-top: 12px;">His work represents the beginning of a transformative path for animal defense in Argentina, where justice is starting to recognize animals as individuals with their own dignity and sensitivity.</p>
 
                 <div class="jeronimo__links">
                     <a href="https://mendozalegal.com/2026/04/02/el-caso-patroclo-y-aragon-en-el-derecho-animal-argentino/" target="_blank" rel="noopener" class="jeronimo__link jeronimo__link--amber">
-                        📰 Nota en Mendoza Legal →
+                        📰 Read the Mendoza Legal article →
                     </a>
                     <a href="https://www.instagram.com/lavozdelosequinos.mendoza/" target="_blank" rel="noopener" class="jeronimo__link jeronimo__link--outline">
                         📷 @lavozdelosequinos.mendoza
@@ -745,10 +723,10 @@
     <footer class="logros-footer">
         <div class="container">
             <p class="logros-footer__text">
-                © <span id="year"></span> Asociación PEMPA · Maipú, Mendoza
+                © <span id="year"></span> PEMPA Association · Maipú, Mendoza · Argentina
             </p>
             <p class="logros-footer__text" style="margin-top: 8px;">
-                Desarrollado por <a href="https://deltacode.com.ar/" target="_blank" rel="noopener">DeltaCode</a>
+                Developed by <a href="https://deltacode.com.ar/" target="_blank" rel="noopener">DeltaCode</a>
             </p>
         </div>
     </footer>

@@ -350,8 +350,8 @@ ul {
 .lang-switch {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 8px 14px;
+    gap: 8px;
+    padding: 7px 12px;
     background: rgba(245, 239, 226, 0.06);
     border: 1px solid rgba(245, 239, 226, 0.2);
     border-radius: 100px;
@@ -365,8 +365,10 @@ ul {
 }
 
 .lang-switch__btn {
-    display: inline-block;
-    padding: 4px 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
     background: transparent;
     border: none;
     color: var(--cream);
@@ -376,34 +378,53 @@ ul {
     letter-spacing: 0.1em;
     text-decoration: none;
     cursor: pointer;
-    transition: color 0.25s var(--ease);
+    transition: color 0.25s var(--ease), opacity 0.25s var(--ease);
     opacity: 0.55;
+    border-radius: 50px;
 }
 
 .nav--scrolled .lang-switch__btn {
     color: var(--ink);
 }
 
+.lang-switch__btn:hover {
+    opacity: 0.95;
+    color: var(--amber);
+}
+
 .lang-switch__btn--active {
     opacity: 1;
     color: var(--amber);
     cursor: default;
+    pointer-events: none;
 }
 
 .nav--scrolled .lang-switch__btn--active {
     color: var(--amber-dark);
 }
 
-.lang-switch__btn--soon:hover {
-    opacity: 0.9;
-    color: var(--amber);
+.lang-switch__flag {
+    width: 18px;
+    height: 14px;
+    border-radius: 2px;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.06);
+    flex-shrink: 0;
+}
+
+.lang-switch__flag svg {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .lang-switch__divider {
     color: var(--cream);
-    opacity: 0.3;
+    opacity: 0.25;
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
+    line-height: 1;
 }
 
 .nav--scrolled .lang-switch__divider {
@@ -413,9 +434,16 @@ ul {
 @media (max-width: 480px) {
     .lang-switch {
         padding: 6px 10px;
+        gap: 6px;
     }
     .lang-switch__btn {
         font-size: 0.7rem;
+        padding: 3px 5px;
+        gap: 5px;
+    }
+    .lang-switch__flag {
+        width: 16px;
+        height: 12px;
     }
 }
 
@@ -1886,6 +1914,87 @@ ul {
     font-family: var(--font-mono);
     font-size: 0.82rem;
     letter-spacing: 0.02em;
+}
+
+/* ====== CARD CAMPAÑA PADRINOS ====== */
+.ayuda--campaign {
+    border: 2px solid var(--amber);
+    position: relative;
+    background: linear-gradient(135deg, var(--cream) 0%, #fdf6e3 100%);
+}
+
+.ayuda--campaign::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--amber), var(--amber-light), var(--amber));
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.ayuda__tag--highlight {
+    background: var(--amber) !important;
+    color: var(--ink) !important;
+    font-weight: 700 !important;
+}
+
+.ayuda__benefits {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ayuda__benefits li {
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    color: var(--ink);
+    line-height: 1.4;
+    padding-left: 2px;
+}
+
+/* ====== MODAL OPT FEATURED (destacado dorado) ====== */
+.modal__opt--featured {
+    background: linear-gradient(135deg, var(--amber) 0%, var(--amber-light) 100%);
+    border-color: var(--amber) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.modal__opt--featured::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.15) 50%, transparent 100%);
+    pointer-events: none;
+}
+
+.modal__opt--featured .modal__opt-num {
+    color: var(--ink) !important;
+    opacity: 0.6;
+}
+
+.modal__opt--featured .modal__opt-body strong {
+    color: var(--ink) !important;
+    font-weight: 700;
+}
+
+.modal__opt--featured .modal__opt-body small {
+    color: rgba(26, 15, 8, 0.75) !important;
+}
+
+.modal__opt--featured .modal__opt-arrow {
+    color: var(--ink) !important;
+    font-weight: 700;
+}
+
+.modal__opt--featured:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(212, 166, 74, 0.35);
 }
 
 .ayuda__data {
